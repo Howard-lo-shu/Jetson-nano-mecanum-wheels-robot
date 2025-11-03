@@ -1,4 +1,4 @@
-# Jetson-nano-mecanum-wheels-robot
+## Jetson-nano-mecanum-wheels-robot
 本專案旨在打造一套基於 **NVIDIA Jetson Nano** 與 **ROS (Robot Operating System)** 的  <span style="color:#4285F4; font-weight:bold;"> 智慧型麥克納姆輪全向移動平台 </span>
 
 透過 Jetson Nano GPIO 控制驅動板與馬達，並結合 ROS 運動控制架構，使平台能達成 **全方位移動、自動導航與智慧控制**。
