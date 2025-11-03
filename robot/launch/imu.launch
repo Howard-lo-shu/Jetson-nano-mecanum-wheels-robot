@@ -1,0 +1,8 @@
+<launch>
+  
+  <node name="imu_node" pkg="tutorial" type="imu_node.py" >
+  </node>
+  <node name="imu_odom" pkg="tutorial" type="imu_odom.py" >
+  </node>
+
+</launch>
