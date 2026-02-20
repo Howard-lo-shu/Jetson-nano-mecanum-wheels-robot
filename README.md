@@ -11,7 +11,7 @@
 - 使用 Jetson Nano 的 GPIO 腳位控制馬達驅動板
 <img width="779" height="484" alt="小車" src="https://github.com/user-attachments/assets/76cc4aa1-fd22-4802-b961-a5cd1cfb034d" />
 透過 PCA9685 驅動 L298N 馬達控制四顆 12V 馬達，使車體移動；同時 MPU6050 提供 IMU 姿態資料（特別是 Z 軸角度），與馬達推算出的 X、Y 位移一起組成 /odom 里程資訊，再回傳給 PC 端。
-Jetson Nano 本身雖然可以輸出 PWM，但可用的硬體 PWM 腳位非常有限，而且若用軟體模擬 PWM，會受到系統負載影響，造成頻率與佔空比不穩，進而讓馬達轉速不一致、車體運動不平順。PCA9685 是一顆透過 I²C 控制的 16 通道硬體 PWM 控制晶片（由 NXP Semiconductors 推出），能獨立產生精準且穩定的 PWM 訊號，不會占用 Jetson CPU 資源。
+Jetson Nano 本身雖然可以輸出 PWM，但可用的硬體 PWM 腳位非常有限，而且若用軟體模擬 PWM，會受到系統負載影響，造成頻率與佔空比不穩，進而讓馬達轉速不一致、車體運動不平順。PCA9685 是一顆透過 I²C 控制的 16 通道硬體 PWM 控制晶片，能獨立產生精準且穩定的 PWM 訊號，不會占用 Jetson CPU 資源。
 
 
 ### ROS 運動控制
